@@ -39,6 +39,13 @@ nav > ul > li {
     align-content: center;
 }
 
+ul li {
+    font-size: 2rem;
+}
+
+ul + li {
+    margin: 3rem;
+}
 
 .display {
     border: 2px solid cyan;
@@ -82,7 +89,7 @@ input[type="text"]:disabled {
     background: #777;
 }
 
-.focus {
+.focus:focus {
     height: 5rem;
     width: 10rem;
     border: 3px solid grey;
@@ -274,7 +281,7 @@ svg {
 
 
 
-@media (max-width: 800px){
+@media (max-width: 800px) and (orientation: landscape) {
     .media-query {
         display: none;
     }
